@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<head>
+    <title>Splitter</title>
+    <h1>Давай-ка посчитаемся!</h1>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="Form">
+        <div class="add-people-block rounded-bottom">
+            <div>
+                <h3>Добавить участника</h1>
+            </div>
+            <div class="input-group">
+                <input id="inputAddPeople" type="text" class="form-control btn-light" placeholder="Имя" aria-label="Username">
+                <div class="input-group-prepend">
+                    <button class="btn btn-info" id="buttonAddPeople" onclick="addPeople()">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="add-product-block rounded-0">
+            <div>
+                <span>
+                    <h3>Добавить продукт</h1>
+                </span>
+                <div class="input-group">
+                    <input id="inputAddProduct" type="text" aria-label="First name" class="form-control btn-light" placeholder="Продукт">
+                    <input id="inputAddPrice" type="text" aria-label="Last name" class="form-control btn-light" placeholder="Цена">
+                    <button class="btn btn-info" id="buttonAddProduct" onclick="addProduct()">+</button>
+                  </div>
+            </div>
+        </div>
+        <div class="results-block rounded-top" id="resultsBlock">
+            <div class="row container-1">
+                <div class="results-dom-people-block">
+                    <div class="col-5 result-header-block">
+                    </div>
+                    <div class="row col-7 results-dom-people" id="resultsDomPeople">
+                    </div>
+                </div>
+            </div>
+            <div class="row container-2">
+                <div id="resultsDomProduct" class="results-dom-product">
+                </div>
+            </div>
+            <input class="btn-info btn-block" id="resultsSumButton" type="button" value="="  onclick="summProductForPeople()"></input>
+            <div class="row container-3">
+                <div class="col-1 box-1">Итого
+                </div>
+                <div class="col-4 parent-results-person-sum-block" id="parentResultsPersonSumBlock">
+                    <div class="results-person-sum-block" id="resultsPersonSumBlock">
+                     </div>
+                </div>
+                <div class="col-7 span-results-person-sum" id="spanResultsPersonSum">
+                </div>
+            </div> 
+        </div>        
+    </div>   
+</body>
+
+<script src="src/people.js"></script>
+<script src="src/products.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>

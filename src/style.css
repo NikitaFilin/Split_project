@@ -1,0 +1,127 @@
+body {
+  height: 100vh;
+  background: #a1ffce; /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom right,
+    #cff09e,
+    #a8dba8
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: large;
+  font-weight: bold;
+}
+.container-1,
+.container-2,
+.container-3 {
+  padding: 5px;
+}
+
+.btn-del {
+  margin: 10px;
+}
+
+.My-btn-info {
+  font-size: small;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
+
+h1 {
+  padding: 15px;
+  margin: 15px;
+}
+
+.Form .add-people-block {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.Form .add-product-block {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.Form .results-block {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.container-1 div,
+.container-2 div .container-3 div {
+  padding: 10px;
+  width: 100px;
+}
+
+.container-1 .results-dom-people-block {
+  display: contents;
+}
+
+.container-1 .results-dom-people-block .result-header-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.results-dom-people .results-dom-people-names {
+  text-align: center;
+}
+.results-dom-product {
+  flex-grow: 1;
+}
+
+.container-2 .span-results-dom-product {
+  display: flex;
+  padding: 10px;
+}
+
+.container-2 .results-dom-product .span-results-dom-product {
+  text-align: center;
+}
+
+.container-2 .results-dom-product .span-results-dom-product .checkbox-block {
+  text-align: center;
+  display: inline-flex;
+}
+.container-2
+  .results-dom-product
+  .span-results-dom-product
+  .checkbox-block
+  .checkbox {
+  padding: 10px;
+  margin: 5px;
+  width: 100px;
+}
+
+li {
+  padding: 10px;
+  list-style-type: none;
+  display: inline-block;
+}
+
+.container-3 .box-1 {
+  padding: 15px;
+}
+.container-3 .parent-results-person-sum-block {
+  text-align: center;
+  padding: 15px;
+}
+.container-3 .span-results-person-sum {
+  text-align: center;
+  display: inline-flex;
+  padding: 10px;
+}
+
+.container-3 .span-results-person-sum .results-dom-people-amount {
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  margin: 5px;
+}
